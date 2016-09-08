@@ -135,6 +135,20 @@ const libraryGenerator = generators.Base.extend({
       );
     },
 
+    editorconfig() {
+      this.fs.copy(
+        this.templatePath('editorconfig'),
+        this.destinationPath('.editorconfig')
+      );
+    },
+
+    travis() {
+      this.fs.copy(
+        this.templatePath('travis.yml'),
+        this.destinationPath('.travis.yml')
+      );
+    },
+
     webpack() {
       this.fs.copyTpl(
         this.templatePath('webpack.config.js'),

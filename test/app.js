@@ -1,18 +1,29 @@
-'use strict';
-var path = require('path');
-var assert = require('yeoman-assert');
-var helpers = require('yeoman-test');
+/* global describe before it */
 
-describe('generator-bwk:app', function () {
-  before(function () {
-    return helpers.run(path.join(__dirname, '../generators/app'))
-      .withPrompts({someAnswer: true})
-      .toPromise();
-  });
+const path = require('path');
+const assert = require('yeoman-assert');
+const helpers = require('yeoman-test');
 
-  it('creates files', function () {
+describe('generator-bwk:app', () => {
+  before(() =>
+    helpers.run(path.join(__dirname, '../generators/app'))
+      .withPrompts({ someAnswer: true }).toPromise()
+  );
+
+  it('creates files', () => {
     assert.file([
-      'dummyfile.txt'
+      '.babelrc',
+      '.eslintignore',
+      '.eslintrc.json',
+      '.gitignore',
+      '.lgtm',
+      '.npmrc',
+      'karma.conf.js',
+      'LICENSE',
+      'MAINTAINERS',
+      'package.json',
+      'README.md',
+      'webpack.config.js'
     ]);
   });
 });

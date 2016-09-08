@@ -1,55 +1,50 @@
-'use strict';
-var path = require('path');
-var gulp = require('gulp');
-var eslint = require('gulp-eslint');
-var excludeGitignore = require('gulp-exclude-gitignore');
-var mocha = require('gulp-mocha');
-var istanbul = require('gulp-istanbul');
-var nsp = require('gulp-nsp');
-var plumber = require('gulp-plumber');
-var coveralls = require('gulp-coveralls');
+const path             = require('path');
+const gulp             = require('gulp');
+const nsp              = require('gulp-nsp');
+const mocha            = require('gulp-mocha');
+const plumber          = require('gulp-plumber');
+const istanbul         = require('gulp-istanbul');
+const coveralls        = require('gulp-coveralls');
+const excludeGitignore = require('gulp-exclude-gitignore');
 
-gulp.task('static', function () {
-  return gulp.src('**/*.js')
+gulp.task('static', () =>
+  gulp.src('**/*.js')
     .pipe(excludeGitignore())
-    .pipe(eslint())
-    .pipe(eslint.format())
-    .pipe(eslint.failAfterError());
+);
+
+gulp.task('nsp', (cb) => {
+  nsp({ package: path.resolve('package.json') }, cb);
 });
 
-gulp.task('nsp', function (cb) {
-  nsp({package: path.resolve('package.json')}, cb);
-});
-
-gulp.task('pre-test', function () {
-  return gulp.src('generators/**/*.js')
+gulp.task('pre-test', () =>
+  gulp.src('generators/index.js')
     .pipe(excludeGitignore())
     .pipe(istanbul({
       includeUntested: true
     }))
-    .pipe(istanbul.hookRequire());
-});
+    .pipe(istanbul.hookRequire())
+);
 
-gulp.task('test', ['pre-test'], function (cb) {
-  var mochaErr;
+gulp.task('test', ['pre-test'], (cb) => {
+  let mochaErr;
 
   gulp.src('test/**/*.js')
     .pipe(plumber())
-    .pipe(mocha({reporter: 'spec'}))
-    .on('error', function (err) {
+    .pipe(mocha({ reporter: 'spec' }))
+    .on('error', (err) => {
       mochaErr = err;
     })
     .pipe(istanbul.writeReports())
-    .on('end', function () {
+    .on('end', () => {
       cb(mochaErr);
     });
 });
 
-gulp.task('watch', function () {
+gulp.task('watch', () => {
   gulp.watch(['generators/**/*.js', 'test/**'], ['test']);
 });
 
-gulp.task('coveralls', ['test'], function () {
+gulp.task('coveralls', ['test'], () => {
   if (!process.env.CI) {
     return;
   }
