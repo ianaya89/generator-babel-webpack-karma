@@ -1,4 +1,4 @@
-# generator-bwk [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# generator-bwk
 > Yeoman generator to build npm client side libraries using babel, webpack & karma
 
 ## Installation
