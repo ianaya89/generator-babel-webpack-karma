@@ -3,10 +3,6 @@
 
 ![yeoman](img/yeoman.png)
 
-## Babel 6 + Webpack + karma
-<img src="img/babel.png" alt="babel" style="width: 100px; height: 100px"/>
-<img src="img/webpack.png" alt="webpack" style="width: 100px; height: 100px"/>
-<img src="img/karma.png" alt="karma" style="width: 144px; height: 37px"/>
 
 ## Installation
 
@@ -23,6 +19,31 @@ Then generate your new project:
 yo bwk
 ```
 
+## Scaffolding
+
+```
+└───src/
+|   ├───index.js
+└───test/
+    ├───index.js
+    ├───spec/
+    │   └───index.spec.js
+├───.babelrc
+├───.editorconfig
+├───.eslintignore
+├───.eslintrc.json
+├───.gitignore
+├───.lgtm
+├───.npmrc
+├───.travis.yml
+├───karma.conf.js
+├───LICENSE
+├───MAINTAINERS
+├───package.json
+├───README.md
+├───webpack.config.js
+```
+
 ## Getting To Know Yeoman
 
  * Yeoman has a heart of gold.
@@ -33,13 +54,3 @@ yo bwk
 ## License
 
 MIT © [Ignacio Anaya]()
-
-
-[npm-image]: https://badge.fury.io/js/generator-bwk.svg
-[npm-url]: https://npmjs.org/package/generator-bwk
-[travis-image]: https://travis-ci.org/ianaya89/generator-bwk.svg?branch=master
-[travis-url]: https://travis-ci.org/ianaya89/generator-bwk
-[daviddm-image]: https://david-dm.org/ianaya89/generator-bwk.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/ianaya89/generator-bwk
-[coveralls-image]: https://coveralls.io/repos/ianaya89/generator-bwk/badge.svg
-[coveralls-url]: https://coveralls.io/r/ianaya89/generator-bwk
