@@ -3,6 +3,11 @@
 
 ![yeoman](img/yeoman.png)
 
+## Babel 6 + Webpack + karma
+![babel](img/babel.png =100x100)
+![webpack](img/webpack.png =100x100)
+![karma](img/karma.png =144x37)
+
 ## Installation
 
 First, install [Yeoman](http://yeoman.io) and generator-bwk using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
