@@ -142,10 +142,10 @@ const libraryGenerator = generators.Base.extend({
       );
     },
 
-    travis() {
+    circle() {
       this.fs.copy(
-        this.templatePath('travis.yml'),
-        this.destinationPath('.travis.yml')
+        this.templatePath('circle.yml'),
+        this.destinationPath('circle.yml')
       );
     },
 

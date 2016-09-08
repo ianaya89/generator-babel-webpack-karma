@@ -39,7 +39,7 @@ yo bwk
 ├───.gitignore
 ├───.lgtm
 ├───.npmrc
-├───.travis.yml
+├───circle.yml
 ├───karma.conf.js
 ├───LICENSE
 ├───MAINTAINERS
