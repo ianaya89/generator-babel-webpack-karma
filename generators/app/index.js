@@ -96,7 +96,7 @@ const libraryGenerator = generators.Base.extend({
 
     readme() {
       this.fs.copy(
-        this.templatePath('README.md'),
+        this.templatePath('_README.md'),
         this.destinationPath('README.md'), {
           libraryName       : this.libraryName,
           libraryDescription: this.libraryDescription
@@ -113,7 +113,7 @@ const libraryGenerator = generators.Base.extend({
 
     maintainers() {
       this.fs.copy(
-        this.templatePath('MAINTAINERS'),
+        this.templatePath('_MAINTAINERS'),
         this.destinationPath('MAINTAINERS'), {
           authorName  : this.authorName,
           authorEmail : this.authorEmail
