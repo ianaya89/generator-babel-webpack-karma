@@ -21,6 +21,7 @@ describe('generator-bwk:app', () => {
       '.eslintrc.json',
       '.gitignore',
       '.lgtm',
+      '.npmignore',
       '.npmrc',
       'circle.yml',
       'karma.conf.js',

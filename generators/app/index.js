@@ -135,6 +135,13 @@ const libraryGenerator = generators.Base.extend({
       );
     },
 
+    npmignore() {
+      this.fs.copy(
+        this.templatePath('npmignore'),
+        this.destinationPath('.npmignore')
+      );
+    },
+
     editorconfig() {
       this.fs.copy(
         this.templatePath('editorconfig'),
