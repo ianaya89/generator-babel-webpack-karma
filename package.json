@@ -1,6 +1,6 @@
 {
   "name": "generator-bwk",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Yeoman generator to build npm client side libraries using babel, webpack & karma",
   "author": {
     "name": "Ignacio Anaya",
