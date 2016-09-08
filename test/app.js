@@ -22,7 +22,7 @@ describe('generator-bwk:app', () => {
       '.gitignore',
       '.lgtm',
       '.npmrc',
-      'travis.yml',
+      '.travis.yml',
       'karma.conf.js',
       'LICENSE',
       'MAINTAINERS',
