@@ -173,7 +173,7 @@ const libraryGenerator = generators.Base.extend({
   },
 
   install() {
-    // this.npmInstall();
+    this.npmInstall();
   }
 });
 
