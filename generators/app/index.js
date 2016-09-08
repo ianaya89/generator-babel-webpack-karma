@@ -28,7 +28,7 @@ const libraryGenerator = generators.Base.extend({
         name    : 'libraryVersion',
         type    : 'input',
         message : 'Library version:',
-        default : '0.1.0'
+        default : '0.0.1'
       }, {
         name    : 'authorName',
         type    : 'input',
