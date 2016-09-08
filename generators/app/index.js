@@ -95,7 +95,7 @@ const libraryGenerator = generators.Base.extend({
     },
 
     readme() {
-      this.fs.copy(
+      this.fs.copyTpl(
         this.templatePath('_README.md'),
         this.destinationPath('README.md'), {
           libraryName       : this.libraryName,
@@ -112,7 +112,7 @@ const libraryGenerator = generators.Base.extend({
     },
 
     maintainers() {
-      this.fs.copy(
+      this.fs.copyTpl(
         this.templatePath('_MAINTAINERS'),
         this.destinationPath('MAINTAINERS'), {
           authorName  : this.authorName,
@@ -136,9 +136,11 @@ const libraryGenerator = generators.Base.extend({
     },
 
     webpack() {
-      this.fs.copy(
+      this.fs.copyTpl(
         this.templatePath('webpack.config.js'),
-        this.destinationPath('webpack.config.js')
+        this.destinationPath('webpack.config.js'), {
+          libraryName: this.libraryName
+        }
       );
     },
 

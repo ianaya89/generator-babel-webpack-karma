@@ -4,7 +4,7 @@ const webpack = require('webpack');
 
 const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 
-const libraryName = <%= libraryName %>;
+const libraryName = '<%= libraryName %>';
 
 const plugins = [];
 let outputFile;
