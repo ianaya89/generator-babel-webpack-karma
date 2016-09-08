@@ -1,13 +1,11 @@
 {
   "name": "<%= libraryName %>",
   "version": "<%= libraryVersion %>",
-  "revision": "<%= libraryRevision %>",
   "description": "<%= libraryDescription %>",
-  "main": "lib/index.min.js",
+  "main": "lib/<%= libraryName %>.min.js",
   "author": {
     "name": "<%= authorName %>",
-    "email": "<%= authorEmail %>",
-    "url": "<%= authorUrl %>"
+    "email": "<%= authorEmail %>"
   },
   "license": "MIT",
   "scripts": {
