@@ -1,8 +1,8 @@
 {
-  "name": "<%= serverName %>",
-  "version": "<%= serverVersion %>",
-  "revision": "<%= serverRevision %>",
-  "description": "<%= serverDescription %>",
+  "name": "<%= libraryName %>",
+  "version": "<%= libraryVersion %>",
+  "revision": "<%= libraryRevision %>",
+  "description": "<%= libraryDescription %>",
   "main": "lib/index.min.js",
   "author": {
     "name": "<%= authorName %>",
