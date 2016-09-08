@@ -1,4 +1,7 @@
 # generator-bwk
+[![bitHound Dependencies](https://www.bithound.io/github/ianaya89/generator-bwk/badges/dependencies.svg)](https://www.bithound.io/github/ianaya89/generator-bwk/master/dependencies/npm)
+[![bitHound Dev Dependencies](https://www.bithound.io/github/ianaya89/generator-bwk/badges/devDependencies.svg)](https://www.bithound.io/github/ianaya89/generator-bwk/master/dependencies/npm)
+
 > Yeoman generator to build npm client side libraries using babel, webpack & karma
 
 ![yeoman](img/yeoman.png)
