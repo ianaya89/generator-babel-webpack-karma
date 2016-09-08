@@ -4,9 +4,9 @@
 ![yeoman](img/yeoman.png)
 
 ## Babel 6 + Webpack + karma
-![babel](img/babel.png =100x100)
-![webpack](img/webpack.png =100x100)
-![karma](img/karma.png =144x37)
+<img src="img/babel.png" alt="babel" style="width: 100px; height: 100px"/>
+<img src="img/webpack.png" alt="webpack" style="width: 100px; height: 100px"/>
+<img src="img/karma.png" alt="karma" style="width: 144px; height: 37px"/>
 
 ## Installation
 
