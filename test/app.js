@@ -12,12 +12,17 @@ describe('generator-bwk:app', () => {
 
   it('creates files', () => {
     assert.file([
+      'src/index.js',
+      'test/index.js',
+      'test/specs/index.spec.js',
       '.babelrc',
+      '.editorconfig',
       '.eslintignore',
       '.eslintrc.json',
       '.gitignore',
       '.lgtm',
       '.npmrc',
+      'travis.yml',
       'karma.conf.js',
       'LICENSE',
       'MAINTAINERS',
