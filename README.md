@@ -2,6 +2,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/ianaya89/generator-bwk/badge.svg?branch=master)](https://coveralls.io/github/ianaya89/generator-bwk?branch=master)
 [![bitHound Dependencies](https://www.bithound.io/github/ianaya89/generator-bwk/badges/dependencies.svg)](https://www.bithound.io/github/ianaya89/generator-bwk/master/dependencies/npm)
 [![bitHound Dev Dependencies](https://www.bithound.io/github/ianaya89/generator-bwk/badges/devDependencies.svg)](https://www.bithound.io/github/ianaya89/generator-bwk/master/dependencies/npm)
+[![bitHound Code](https://www.bithound.io/github/ianaya89/generator-bwk/badges/code.svg)](https://www.bithound.io/github/ianaya89/generator-bwk)
 
 > Yeoman generator to build npm client side libraries using babel, webpack & karma
 
