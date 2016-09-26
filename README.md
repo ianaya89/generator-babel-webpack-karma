@@ -1,4 +1,4 @@
-# generator-bwk
+# generator-babel-webpack-karma
 [![Coverage Status](https://coveralls.io/repos/github/ianaya89/generator-bwk/badge.svg?branch=master)](https://coveralls.io/github/ianaya89/generator-bwk?branch=master)
 [![bitHound Dependencies](https://www.bithound.io/github/ianaya89/generator-bwk/badges/dependencies.svg)](https://www.bithound.io/github/ianaya89/generator-bwk/master/dependencies/npm)
 [![bitHound Dev Dependencies](https://www.bithound.io/github/ianaya89/generator-bwk/badges/devDependencies.svg)](https://www.bithound.io/github/ianaya89/generator-bwk/master/dependencies/npm)
@@ -14,13 +14,13 @@ First, install [Yeoman](http://yeoman.io) and generator-bwk using [npm](https://
 
 ```bash
 npm install -g yo
-npm install -g generator-bwk
+npm install -g generator-babel-webpack-karma
 ```
 
 Then generate your new project:
 
 ```bash
-yo bwk
+yo generator-babel-webpack-karma
 ```
 
 ## Scaffolding
