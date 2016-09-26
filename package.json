@@ -1,6 +1,6 @@
 {
-  "name": "generator-bwk",
-  "version": "0.0.2",
+  "name": "generator-babel-webpack-karma",
+  "version": "0.0.3",
   "description": "Yeoman generator to build npm client side libraries using babel, webpack & karma",
   "author": {
     "name": "Ignacio Anaya",
@@ -21,16 +21,15 @@
     "yeoman-generator"
   ],
   "dependencies": {
-    "chalk": "^1.0.0",
     "to-case": "^2.0.0",
-    "yeoman-generator": "^0.23.0",
-    "yosay": "^1.0.0"
+    "yeoman-generator": "^0.24.1",
+    "yosay": "^1.2.0"
   },
   "devDependencies": {
     "yeoman-test": "^1.0.0",
     "yeoman-assert": "^2.0.0",
     "eslint": "^3.4.0",
-    "eslint-config-airbnb": "^10.0.0",
+    "eslint-config-airbnb": "^11.0.0",
     "eslint-plugin-import": "^1.12.0",
     "eslint-plugin-jsx-a11y": "^2.0.1",
     "eslint-plugin-react": "^6.0.0",
@@ -42,12 +41,6 @@
     "gulp-plumber": "^1.0.0",
     "gulp-nsp": "^2.1.0",
     "gulp-coveralls": "^0.1.0"
-  },
-  "eslintConfig": {
-    "extends": "xo-space",
-    "env": {
-      "mocha": true
-    }
   },
   "repository": "ianaya89/generator-bwk",
   "scripts": {
