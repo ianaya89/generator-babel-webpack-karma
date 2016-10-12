@@ -2,7 +2,7 @@
   "name": "<%= libraryName %>",
   "version": "<%= libraryVersion %>",
   "description": "<%= libraryDescription %>",
-  "main": "lib/<%= libraryName %>.min.js",
+  "main": "dist/<%= libraryName %>.min.js",
   "author": {
     "name": "<%= authorName %>",
     "email": "<%= authorEmail %>"
