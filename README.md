@@ -21,7 +21,7 @@ npm install -g generator-babel-webpack-karma
 Then generate your new project:
 
 ```bash
-yo generator-babel-webpack-karma
+yo babel-webpack-karma
 ```
 
 ## Scaffolding
