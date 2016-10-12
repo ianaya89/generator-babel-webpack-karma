@@ -2,11 +2,27 @@ const merge      = require('webpack-merge');
 const baseConfig = require('./webpack.config');
 
 const webpackConfig = merge(baseConfig, {
-  // use inline sourcemap for karma-sourcemap-loader
   devtool: '#inline-source-map'
 });
 
 delete webpackConfig.entry;
+
+webpackConfig.module.preLoaders = webpackConfig.module.preLoaders || [];
+
+webpackConfig.module.preLoaders.unshift({
+  test   : /\.js$/,
+  loader : 'isparta',
+  include: path.resolve('src/')
+});
+
+webpackConfig.module.loaders.some((loader, i) => {
+  if (loader.loader === 'babel') {
+    loader.include = path.resolve('test/');
+    return true;
+  }
+
+  return false;
+});
 
 module.exports = function(config) {
   config.set({
