@@ -45,7 +45,7 @@ gulp.task('watch', () => {
 });
 
 gulp.task('coveralls', ['test'], () => {
-  if (false && !process.env.CI) { //eslint-disable-line
+  if (!process.env.CI) {
     return;
   }
 
