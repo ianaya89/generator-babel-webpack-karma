@@ -7,6 +7,7 @@ machine:
 dependencies:
   override:
     - npm install
+    - npm install istanbul
     - npm install coveralls
     - npm install bithound
 
@@ -14,4 +15,4 @@ test:
   override:
     - npm test
     - COVERALLS_SERVICE_NAME="circleci" COVERALLS_SERVICE_JOB_ID="$CIRCLE_BUILD_NUM" ./node_modules/coveralls/bin/coveralls.js < ./coverage/lcov.info
-    - ./node_modules/.bin/bithound check git@github.com:ianaya89/generator-bwk.git
+    - ./node_modules/.bin/bithound check git@github.com:ianaya89/enerator-babel-webpack-karma.git

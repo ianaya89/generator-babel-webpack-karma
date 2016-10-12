@@ -42,7 +42,7 @@
     "gulp-nsp": "^2.1.0",
     "gulp-coveralls": "^0.1.0"
   },
-  "repository": "ianaya89/generator-bwk",
+  "repository": "ianaya89/generator-babel-webpack-karma",
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"

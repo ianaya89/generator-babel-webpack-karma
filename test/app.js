@@ -4,7 +4,7 @@ const path = require('path');
 const assert = require('yeoman-assert');
 const helpers = require('yeoman-test');
 
-describe('generator-bwk:app', () => {
+describe('generator-babel-webpack-karma:app', () => {
   before(() =>
     helpers.run(path.join(__dirname, '../generators/app'))
       .withPrompts({ someAnswer: true }).toPromise()
