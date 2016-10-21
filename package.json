@@ -6,6 +6,10 @@
     "name": "Ignacio Anaya",
     "email": "ignacio.anaya89@gmail.com"
   },
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "gulp"
+  },
   "files": [
     "generators"
   ],
@@ -43,9 +47,5 @@
     "gulp-coveralls": "^0.1.0"
   },
   "repository": "ianaya89/generator-babel-webpack-karma",
-  "scripts": {
-    "prepublish": "gulp prepublish",
-    "test": "gulp"
-  },
   "license": "MIT"
 }
