@@ -26,6 +26,8 @@ webpackConfig.module.loaders.some((loader, i) => {
   return false;
 });
 
+webpackConfig.eslint = { configFile: '.eslintrc_test.json' };
+
 module.exports = function(config) {
   config.set({
     browsers: ['PhantomJS'],
