@@ -13,7 +13,8 @@
     "dev": "webpack --progress --colors --watch --mode=dev",
     "test": "karma start karma.conf.js --single-run",
     "check-cover": "open coverage/lcov-report/index.html",
-    "eslint": "eslint . --ext .js",
+    "eslint": "eslint src --ext .js",
+    "eslint-test": "eslint -c .eslintrc_test.json test --ext .js",
     "prepublish": "npm run build"
   },
   "devDependencies": {
@@ -27,6 +28,7 @@
     "eslint-loader": "1.5.0",
     "eslint-plugin-import": "^2.0.1",
     "eslint-plugin-jsx-a11y": "^2.0.1",
+    "eslint-plugin-mocha": "^4.7.0",
     "eslint-plugin-react": "^6.0.0",
     "isparta": "^4.0.0",
     "isparta-loader": "^2.0.0",
@@ -46,6 +48,7 @@
     "yargs": "6.0.0"
   },
   "pre-commit": [
-    "eslint"
+    "eslint",
+    "eslint-test"
   ]
 }
