@@ -1,7 +1,7 @@
 # generator-babel-webpack-karma
 
-[![npm version](https://badge.fury.io/js/generator-babel-webpack-karma.svg)](https://badge.fury.io/js/generator-babel-webpack-karma)
 [![CircleCI](https://circleci.com/gh/ianaya89/generator-babel-webpack-karma.svg?style=svg)](https://circleci.com/gh/ianaya89/generator-babel-webpack-karma)
+[![npm version](https://badge.fury.io/js/generator-babel-webpack-karma.svg)](https://badge.fury.io/js/generator-babel-webpack-karma)
 [![bitHound Dependencies](https://www.bithound.io/github/ianaya89/generator-babel-webpack-karma/badges/dependencies.svg)](https://www.bithound.io/github/ianaya89/generator-babel-webpack-karma/master/dependencies/npm)
 [![bitHound Dev Dependencies](https://www.bithound.io/github/ianaya89/generator-babel-webpack-karma/badges/devDependencies.svg)](https://www.bithound.io/github/ianaya89/generator-babel-webpack-karma/master/dependencies/npm)
 [![bitHound Code](https://www.bithound.io/github/ianaya89/generator-babel-webpack-karma/badges/code.svg)](https://www.bithound.io/github/ianaya89/generator-babel-webpack-karma)
@@ -32,6 +32,7 @@ yo babel-webpack-karma
 └───src/
 |   ├───index.js
 └───test/
+    ├───.eslintrc
     ├───index.js
     ├───spec/
     │   └───index.spec.js
