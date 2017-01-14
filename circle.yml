@@ -8,6 +8,7 @@ dependencies:
   override:
     - npm install
     - npm install istanbul
+    - npm install -g gulp-coveralls
     - npm install coveralls
     - npm install bithound
 
