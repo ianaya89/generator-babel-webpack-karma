@@ -12,9 +12,10 @@
     "build": "webpack --mode=build",
     "dev": "webpack --progress --colors --watch --mode=dev",
     "test": "karma start karma.conf.js --single-run",
-    "check-cover": "open coverage/lcov-report/index.html",
+    "cover": "open coverage/lcov-report/index.html",
     "eslint": "eslint src --ext .js",
-    "eslint-test": "eslint -c .eslintrc_test.json test --ext .js",
+    "eslint:fix": "eslint src .js --fix",
+    "eslint:test": "eslint -c test/.eslintrc test --ext .js",
     "prepublish": "npm run build"
   },
   "devDependencies": {
