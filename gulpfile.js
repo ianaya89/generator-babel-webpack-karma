@@ -4,7 +4,7 @@ const nsp              = require('gulp-nsp');
 const mocha            = require('gulp-mocha');
 const plumber          = require('gulp-plumber');
 const istanbul         = require('gulp-istanbul');
-const coveralls        = require('gulp-coveralls');
+// const coveralls        = require('gulp-coveralls');
 const excludeGitignore = require('gulp-exclude-gitignore');
 
 gulp.task('static', () =>
@@ -44,14 +44,14 @@ gulp.task('watch', () => {
   gulp.watch(['generators/**/*.js', 'test/**'], ['test']);
 });
 
-gulp.task('coveralls', ['test'], () => {
-  if (!process.env.CI) {
-    return;
-  }
-
-  return gulp.src(path.join(__dirname, 'coverage/lcov.info'))
-    .pipe(coveralls());
-});
+// gulp.task('coveralls', ['test'], () => {
+//   if (!process.env.CI) {
+//     return;
+//   }
+//
+//   return gulp.src(path.join(__dirname, 'coverage/lcov.info'))
+//     .pipe(coveralls());
+// });
 
 gulp.task('prepublish', ['nsp']);
 gulp.task('default', ['static', 'test', 'coveralls']);
