@@ -7,10 +7,9 @@ machine:
 dependencies:
   override:
     - npm install
-    - npm install coveralls
     - npm install bithound
 
 test:
   override:
     - npm test
-    - ./node_modules/.bin/bithound check git@github.com:ianaya89/enerator-babel-webpack-karma.git
+    - ./node_modules/.bin/bithound check git@github.com:ianaya89/generator-babel-webpack-karma.git
