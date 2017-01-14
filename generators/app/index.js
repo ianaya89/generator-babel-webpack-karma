@@ -73,6 +73,13 @@ const libraryGenerator = generators.Base.extend({
       );
     },
 
+    eslintrcTest() {
+      this.fs.copy(
+        this.templatePath('eslintrc.test'),
+        this.destinationPath('test/.eslintrc')
+      );
+    },
+
     eslintignore() {
       this.fs.copy(
         this.templatePath('eslintignore'),
