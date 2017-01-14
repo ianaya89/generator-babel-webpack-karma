@@ -45,14 +45,12 @@ gulp.task('watch', () => {
 });
 
 gulp.task('coveralls', ['test'], () => {
-  if (!process.env.CI) {
-    return;
-  }
+  if (!process.env.CI) { return; }
 
   return gulp.src(path.join(__dirname, 'coverage/lcov.info'))
     .pipe(coveralls());
 });
 
 gulp.task('prepublish', ['nsp']);
-gulp.task('test', ['static', 'test', 'coveralls']);
+gulp.task('local', ['static', 'test', 'coveralls']);
 gulp.task('default', ['static', 'test']);
