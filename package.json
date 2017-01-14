@@ -9,6 +9,7 @@
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp",
+    "cover": "open coverage/lcov-report/index.html",
     "test:demo": "cd demo && yo babel-webpack-karma"
   },
   "files": [
