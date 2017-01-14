@@ -111,23 +111,6 @@ const libraryGenerator = generators.Base.extend({
       );
     },
 
-    maintainers() {
-      this.fs.copyTpl(
-        this.templatePath('_MAINTAINERS'),
-        this.destinationPath('MAINTAINERS'), {
-          authorName  : this.authorName,
-          authorEmail : this.authorEmail
-        }
-      );
-    },
-
-    lgtm() {
-      this.fs.copy(
-        this.templatePath('lgtm'),
-        this.destinationPath('.lgtm')
-      );
-    },
-
     npm() {
       this.fs.copy(
         this.templatePath('npmrc'),
