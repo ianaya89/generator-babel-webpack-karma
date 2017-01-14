@@ -18,7 +18,7 @@ const libraryGenerator = generators.Base.extend({
         name    : 'libraryName',
         type    : 'input',
         message : 'Library name:',
-        filter  : (answer) => to.slug(answer),
+        filter  : answer => to.slug(answer),
         default : path.basename(this.destinationPath())
       }, {
         name    : 'libraryDescription',
@@ -39,12 +39,12 @@ const libraryGenerator = generators.Base.extend({
         type    : 'input',
         message : 'Author email:',
         store   : true
-      }]).then(answers => {
+      }]).then((answers) => {
         this.libraryName        = answers.libraryName;
         this.libraryDescription = answers.libraryDescription;
         this.libraryVersion     = answers.libraryVersion;
-        this.authorName        = answers.authorName;
-        this.authorEmail       = answers.authorEmail;
+        this.authorName         = answers.authorName;
+        this.authorEmail        = answers.authorEmail;
       });
     }
   },
